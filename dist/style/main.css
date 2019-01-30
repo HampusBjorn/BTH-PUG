@@ -1,0 +1,101 @@
+@font-face {
+	font-family: 'GothamBook';
+	src: url('./GothamBook.eot');
+	src: local('GothamBook'), url('./GothamBook.woff') format('woff'), url('./GothamBook.ttf') format('truetype');
+}
+
+.logo {
+    width: 40px;
+    position: absolute;
+    left: 2vw;
+    top: 1vw;
+}
+
+.menuico {
+    width: 45px;
+    height: 7.5px;
+    background-color: white;
+    margin: 6px 0;
+    border-radius: 10px;
+}
+
+.menuicoborder {
+    position: absolute;
+    right: 2vw;
+    top: 1vw;
+}
+
+.filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.bildfyll {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    left: 0;
+    top: 0;
+    background-image: url("../Pic/paint.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainText {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-family: 'GothamBook' !important;
+}
+
+.mainText p {
+    text-align: center;
+    color: white;
+    font-size: 5vw;
+    margin: 0;
+    padding: 0; 
+}
+
+.merinfo {
+    position: absolute;
+    left: 67%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-family: 'GothamBook' !important;
+    border: 3px solid white;
+    color: white;
+}
+
+.merinfo p {
+    font-size: 1.7vw;
+    margin: 0;
+    padding: 0.7vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.föralla {
+    position: relative;
+    bottom: 1vw;
+}
+
+.arrow {
+width: 70px;
+position: absolute;
+left: 50%;
+bottom: 2vw;
+transform: translate(-50%,0)
+}
