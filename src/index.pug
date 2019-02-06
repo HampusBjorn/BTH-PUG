@@ -1,7 +1,7 @@
 extends layout
 
 block content
-    div(class="menuicoborder")
+    div(class="menuicoborder" onclick="openNav()")
         div(class="menuico")
         div(class="menuico")
         div(class="menuico")
@@ -9,15 +9,27 @@ block content
     
     div(class="bildfyll")
 
-
     div(class="filter")
     img(class="logo" src="Pic/logo.svg", alt="")
-    div(class="mainText")
-        p BILDTERAPI
-        p(class="föralla") FÖR ALLA
+    section(class="about" id="section1")
+        div(class="mainText")
+            p BILDTERAPI
+            p(class="föralla") FÖR ALLA
 
-    div(class="merinfo")
-        p MER INFO
+        div(class="merinfo")
+            p MER INFO
 
+        a(class="arrowA" href="#section2")
+            img(class="arrow" src="Pic/arrow.svg", alt="")
 
-    img(class="arrow" src="Pic/arrow.svg", alt="")
+    section(class="services" id="section2")
+        div(class="fill")
+        a(class="arrowA" href="#section1")
+            img(class="arrow" src="Pic/arrow.svg", alt="")
+
+    div(id="mySidenav" class="sidenav")
+        a(href="javascript:void(0)" class="closebtn" onclick="closeNav()")  &times;
+        a(href="#section1") About
+        a(href="#section2") Services
+        a(href="#") Clients
+        a(href="#") Contact
