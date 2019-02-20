@@ -10,6 +10,7 @@
     position: fixed;
     left: 2vw;
     top: 1vw;
+    z-index: 1000;
 }
 
 .menuico {
@@ -25,12 +26,13 @@
     right: 2vw;
     top: 1vw;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .filter {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     z-index: -1;
     left: 0;
     top: 0;
@@ -41,7 +43,7 @@
 .bildfyll {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     z-index: -2;
     left: 0;
     top: 0;
@@ -90,37 +92,13 @@
     padding-right: 1vw;
 }
 
-@media only screen and (max-width: 1000px){
-    .mainText p {font-size: 6.5vw;}
-}
-
-@media only screen and (max-width: 600px){
-    .merinfo {
-        left: 50%; 
-        top: 60%;
-    }
-
-    .merinfo p {
-        font-size: 8vw;
-        padding: 1vw;
-        padding-left: 3vw;
-        padding-right: 3vw;
-    }
-
-    .mainText p {font-size: 12.5vw;}
-
-    .bildfyll {
-        background-position: 25% 50%;
-    }
-}
-
 .föralla {
     position: relative;
     bottom: 1vw;
 }
 
 .arrow {
-width: 70px;
+width: 50px;
 position: absolute;
 left: 50%;
 bottom: 2vw;
@@ -132,7 +110,7 @@ cursor: pointer;
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 1001;
     top: 0;
     right: 0;
     background-color: #111;
@@ -162,26 +140,172 @@ cursor: pointer;
     font-size: 36px;
     margin-left: 50px;
   }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
 
   .about {
-      position: relative;
+    position: relative;
     height: 100vh;
     width: 100%;
   }
 
-  .fill {
-      height: 100%;
-      width: 100%;
-      background: #111;
+  .services {
+    position: relative;
+    height: 100vh;
+    width: 100%;
   }
 
-  .services {
-      position: relative;
-      height: 100vh;
-      width: 100%;
+  .tjänsterR1 {
+      position: absolute;
+      left: 30%;
+  }
+
+  .tjänsterR2 {
+    position: absolute;
+    left: 70%;
+
+}
+
+#tjänster {
+    background: #f1f1f1;
+    height: 40%;
+    width: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.utbudDiv {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%,-50%);
+}
+
+.line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.2px solid #FFF;
+    height: 80%;
+    width: 1px;
+    background: #FFF;
+}
+
+.utbud {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 5vw;
+    margin: 0;
+    padding: 0;
+}
+
+.listUtbud {
+    position: absolute;
+    left: 52%;
+    top: 50%;
+    transform: translate(0,-50%);
+    cursor: pointer;
+    display: block;
+}
+
+.listUtbud a {
+    text-decoration: none;
+}
+
+.listUtbud p {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0.2em;
+}
+
+.more {display: none}
+
+.Fill2 {
+    background: #353535;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.clients {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+}
+
+@media only screen and (max-width: 1000px){
+    .mainText p {font-size: 6.5vw;}
+    .utbud {font-size: 6.5vw;}
+}
+
+@media only screen and (max-width: 850px){
+    .deskCont2 {display: none;}
+    .more {display: block;}
+    .listUtbud p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .merinfo {
+        left: 50%; 
+        top: 60%;
+    }
+
+    .merinfo p {
+        font-size: 8vw;
+        padding: 1vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .mainText p {font-size: 12.5vw;}
+    .utbud {font-size: 12.5vw;}
+
+    .bildfyll {
+        background-position: 25% 50%;
+    }
+
+    .line {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 1px;
+    }
+
+    .utbud {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .listUtbud {
+        left: 50%;
+        top: 22%;
+        transform: translate(-50%,0);
+        text-align: center;
+    }
+
+    .deskCont {display: block;}
+
+}
+
+@media only screen and (max-width: 450px) {
+    .deskCont {display: none;}
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    .deskCont {display: none;}
   }
