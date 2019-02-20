@@ -240,6 +240,11 @@ cursor: pointer;
         width: 100%;
 }
 
+p.info {
+    text-decoration-line: underline;
+    font-size: 1.5rem;
+}
+
 @media only screen and (max-width: 1000px){
     .mainText p {font-size: 6.5vw;}
     .utbud {font-size: 6.5vw;}
