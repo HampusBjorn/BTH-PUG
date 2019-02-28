@@ -245,9 +245,40 @@ p.info {
     font-size: 1.5rem;
 }
 
+.varning {
+    position: relative;
+    left: 50%;
+    top: 6vh;
+    transform: translate(-50%, 0);
+    width: 20%;
+}
+
+.varningTxT {
+    margin-top: 10vh;
+    font-size: 3vw;
+    text-align: center;
+    color: #FFF;
+}
+
+.VDiv {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60%;
+}
+
+.varningTxT2 {
+    font-size: 1.5vw;
+    color: #FFF;
+    text-align: center;
+}
+
 @media only screen and (max-width: 1000px){
     .mainText p {font-size: 6.5vw;}
     .utbud {font-size: 6.5vw;}
+    .varningTxT {font-size: 3.75vw;}
+    .varningTxT2 {font-size: 2vw;}
+    
 }
 
 @media only screen and (max-width: 850px){
@@ -299,9 +330,22 @@ p.info {
         top: 22%;
         transform: translate(-50%,0);
         text-align: center;
+        width: 80%;
     }
 
     .deskCont {display: block;}
+
+    .menuico {
+        top: 1
+        width: 60px;
+        height: 10px;
+    }
+
+    .VDiv {width: 80%}
+
+    .varningTxT {font-size: 6.5vw;}
+    .varningTxT2 {font-size: 4vw;}
+
 
 }
 
