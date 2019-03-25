@@ -22,3 +22,5 @@ var väldigt enkel och vart färdig med den väldigt fort
 Lektion 6: hemsida färdig för att visa upp och pitcha
 Hemsidans preview är helt färdig och matterial för pitch är också färdigt
 allt gick utan bekymmer
+
+Under momentet har jag läst mig hur man optimerar en onepage layout hemsida och har lärt mig planera inför skapandet av en hemsida
